@@ -10,20 +10,8 @@ import {
   StackNavigator
 } from 'react-navigation'
 
-// import PageA from './components/pageA.js'
-// import PageB from './components/pageB.js'
-
-// const PageAScreen = ({navigation}) => (
-//   <PageA
-//     navigation={navigation}
-//   />
-// )
-//
-// const PageBScreen = ({navigation}) => (
-//   <PageB
-//     navigation={navigation}
-//   />
-// )
+import PageAScreen from './components/PageAScreen'
+import PageBScreen from './components/PageBScreen'
 
 const App = StackNavigator({
   PageA: {

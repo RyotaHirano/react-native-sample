@@ -7,19 +7,7 @@ import {
   StyleSheet
 } from 'react-native'
 
-// const pageA = ({navigation}) => (
-//   <View>
-//     <Text>PageA</Text>
-//     <Button
-//       onPress={() => navigation.navigate('PageB')}
-//       title="PageB"
-//     />
-//   </View>
-// )
-//
-// export default pageA
-
-class PageAScreen extends React.Component {
+export default class PageAScreen extends React.Component {
   static navigationOptions = {
     title: 'PageA'
   }
