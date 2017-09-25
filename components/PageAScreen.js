@@ -1,11 +1,7 @@
 import React from 'react'
 import {
-  View,
-  Text,
-  Button,
-  TouchableOpacity,
-  StyleSheet
-} from 'react-native'
+  Container, Header, Content, Button, Text
+} from 'native-base'
 
 export default class PageAScreen extends React.Component {
   static navigationOptions = {
@@ -15,10 +11,17 @@ export default class PageAScreen extends React.Component {
   render() {
     const { navigate } = this.props.navigation
     return (
-      <Button
-        title="PageB"
-        onPress={ () => navigate('PageB') }
-      />
+      <Container>
+        <Content>
+          <Button
+            primary
+            title="PageB"
+            onPress={ () => navigate('PageB') }
+          >
+            <Text>PageB</Text>
+          </Button>
+        </Content>
+      </Container>
     )
   }
 }
