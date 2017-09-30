@@ -1,17 +1,11 @@
 import React from 'react';
 import {
-  StyleSheet,
-  Text,
-  View,
-  Button,
-  ScrollView
-} from 'react-native';
-import {
   StackNavigator
 } from 'react-navigation'
 
 import PageAScreen from './components/PageAScreen'
 import PageBScreen from './components/PageBScreen'
+import PhotoScreen from './components/PhotoScreen'
 
 const App = StackNavigator({
   PageA: {
@@ -19,6 +13,9 @@ const App = StackNavigator({
   },
   PageB: {
     screen: PageBScreen
+  },
+  Photo: {
+    screen: PhotoScreen
   }
 })
 
