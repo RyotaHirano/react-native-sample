@@ -3,6 +3,7 @@ import Photo from './PhotoScreen'
 import {
   TouchableHighlight,
   CameraRoll,
+  FlatList,
   ScrollView,
   Image,
   StyleSheet,
@@ -11,16 +12,12 @@ import {
 import {
   Container,
   Content,
-  View
+  View,
+  Text
 } from 'native-base'
 
 const { width } = Dimensions.get('window')
 const style = StyleSheet.create({
-  gallery: {
-    flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap'
-  },
   image: {
     width: width/2,
     height: width/2
@@ -42,7 +39,7 @@ export default class PageBScreen extends React.Component {
 
   componentDidMount() {
     CameraRoll.getPhotos(
-        {first: 25}
+        {first: 44}
       )
       .then(data => {
         this.setState({ photos: data.edges })
@@ -51,31 +48,32 @@ export default class PageBScreen extends React.Component {
       })
   }
 
-  render() {
-    const { navigate } = this.props.navigation
+  _onPressItem = (data: object) => {
+    navigate('Photo', {photo: data})
+  }
 
+  _renderItem = ({item}) => (
+    <TouchableHighlight
+      onPressItem={this._onPressItem}
+    >
+      <Image
+        style={style.image}
+        source={{ uri: item.node.image.uri }}
+      />
+    </TouchableHighlight>
+  )
+
+  render() {
     return (
       <Container>
         <Content>
           <ScrollView>
-            <View style={style.gallery}>
-              {
-                this.state.photos.map((photo, index) => {
-                  return (
-                    <TouchableHighlight
-                      key={index}
-                      onPress={ () => navigate('Photo', {photo: photo}) }
-                    >
-                      <Image
-                        key={index}
-                        style={style.image}
-                        source={{ uri: photo.node.image.uri }}
-                      />
-                    </TouchableHighlight>
-                  )
-                })
-              }
-            </View>
+            <FlatList
+              data={this.state.photos}
+              renderItem={this._renderItem}
+              keyExtractor={item => item.node.image.uri}
+              numColumns={2}
+            />
           </ScrollView>
         </Content>
       </Container>
