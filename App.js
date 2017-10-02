@@ -3,6 +3,7 @@ import {
   StackNavigator
 } from 'react-navigation'
 
+// Screens
 import PageAScreen from './components/PageAScreen'
 import PageBScreen from './components/PageBScreen'
 import PhotoScreen from './components/PhotoScreen'
