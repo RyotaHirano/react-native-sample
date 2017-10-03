@@ -18,7 +18,7 @@
   "jest": {
     "preset": "jest-expo",
     "transformIgnorePatterns": [
-      "node_modules/(?!react-native|@shoutem/theme|@shoutem/animation|@shoutem/ui|tcomb-form-native|native-base|expo|@expo|react-navigation)"
+      "node_modules/(?!(jest-)?react-native|react-navigation|@shoutem/theme|@shoutem/animation|@shoutem/ui|tcomb-form-native|native-base|expo|@expo)"
     ]
   },
   "dependencies": {
