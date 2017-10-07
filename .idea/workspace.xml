@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="237ba21f-2526-476a-816f-62d6a6655e46" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/takuchan.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/react-native-sample.iml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,13 +20,9 @@
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1507339392000" expanded="true" signature="272:394" ph="{...}" />
-                <marker date="1507339392000" expanded="true" signature="283:312" ph="{&quot;screen&quot;: PageAScreen...}" />
-                <marker date="1507339392000" expanded="true" signature="323:352" ph="{&quot;screen&quot;: PageBScreen...}" />
-                <marker date="1507339392000" expanded="true" signature="363:392" ph="{&quot;screen&quot;: PhotoScreen...}" />
               </folding>
             </state>
           </provider>
@@ -51,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -85,11 +78,10 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+              <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
               <folding>
-                <marker date="1507339392000" expanded="true" signature="0:1036" ph="{&quot;name&quot;: &quot;react-native-sample&quot;...}" />
-                <marker date="1507339392000" expanded="true" signature="546:767" ph="{&quot;preset&quot;: &quot;jest-expo&quot;...}" />
-                <marker date="1507339392000" expanded="true" signature="787:1034" ph="{&quot;expo&quot;: &quot;^20.0.0&quot;...}" />
+                <marker date="1506788125000" expanded="true" signature="0:846" ph="{&quot;name&quot;: &quot;react-native-sample&quot;...}" />
+                <marker date="1506788125000" expanded="true" signature="597:844" ph="{&quot;expo&quot;: &quot;^20.0.0&quot;...}" />
               </folding>
             </state>
           </provider>
@@ -234,12 +226,12 @@
       <option name="presentableId" value="Default" />
       <updated>1506136799413</updated>
       <workItem from="1506136801421" duration="7073000" />
-      <workItem from="1506237734074" duration="46528000" />
+      <workItem from="1506237734074" duration="46419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53601000" />
+    <option name="totallyTimeSpent" value="53492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="0" />
@@ -300,11 +292,10 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
           <folding>
-            <marker date="1507339392000" expanded="true" signature="0:1036" ph="{&quot;name&quot;: &quot;react-native-sample&quot;...}" />
-            <marker date="1507339392000" expanded="true" signature="546:767" ph="{&quot;preset&quot;: &quot;jest-expo&quot;...}" />
-            <marker date="1507339392000" expanded="true" signature="787:1034" ph="{&quot;expo&quot;: &quot;^20.0.0&quot;...}" />
+            <marker date="1506788125000" expanded="true" signature="0:846" ph="{&quot;name&quot;: &quot;react-native-sample&quot;...}" />
+            <marker date="1506788125000" expanded="true" signature="597:844" ph="{&quot;expo&quot;: &quot;^20.0.0&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -338,13 +329,9 @@
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1507339392000" expanded="true" signature="272:394" ph="{...}" />
-            <marker date="1507339392000" expanded="true" signature="283:312" ph="{&quot;screen&quot;: PageAScreen...}" />
-            <marker date="1507339392000" expanded="true" signature="323:352" ph="{&quot;screen&quot;: PageBScreen...}" />
-            <marker date="1507339392000" expanded="true" signature="363:392" ph="{&quot;screen&quot;: PhotoScreen...}" />
           </folding>
         </state>
       </provider>
@@ -390,7 +377,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
