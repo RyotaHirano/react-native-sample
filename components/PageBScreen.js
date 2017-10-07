@@ -24,7 +24,7 @@ const style = StyleSheet.create({
   }
 })
 
-export default class PageBScreen extends React.Component {
+export default class PageBScreen extends React.PureComponent {
   static navigationOptions = {
     title: 'PageB'
   }
@@ -33,28 +33,27 @@ export default class PageBScreen extends React.Component {
     super(props)
     this.state = {
       isCameraLoaded: false,
-      photos: []
+      photos: [],
+      page: 1
     }
   }
 
   componentDidMount() {
     CameraRoll.getPhotos(
-        {first: 44}
-      )
-      .then(data => {
-        this.setState({ photos: data.edges })
-      }, error => {
-          console.warn(error);
-      })
-  }
-
-  _onPressItem = (data: object) => {
-    navigate('Photo', {photo: data})
+      {first: 44}
+    )
+    .then(data => {
+      this.setState({ photos: data.edges })
+    }, error => {
+        console.warn(error);
+    })
   }
 
   _renderItem = ({item}) => (
     <TouchableHighlight
-      onPressItem={this._onPressItem}
+      onPress={ () =>
+        this.props.navigation.navigate('Photo', {photo: item})
+      }
     >
       <Image
         style={style.image}
@@ -63,6 +62,28 @@ export default class PageBScreen extends React.Component {
     </TouchableHighlight>
   )
 
+  _onEndReached = () => {
+    this.setState(
+      {
+        page: this.state.page + 1
+      },
+      () => {
+        this._getPhoto()
+      }
+    )
+  }
+
+  _getPhoto = () => {
+    CameraRoll.getPhotos(
+      {first: 44}
+    )
+      .then(data => {
+        this.setState({ photos: Object.assign(this.state.photos, data.edges) })
+      }, error => {
+        console.warn(error);
+      })
+  }
+
   render() {
     return (
       <Container>
@@ -70,9 +91,11 @@ export default class PageBScreen extends React.Component {
           <ScrollView>
             <FlatList
               data={this.state.photos}
+              extraData={this.state}
               renderItem={this._renderItem}
               keyExtractor={item => item.node.image.uri}
               numColumns={2}
+              onEndReached={this._onEndReached}
             />
           </ScrollView>
         </Content>
