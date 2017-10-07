@@ -40,7 +40,7 @@ export default class PageBScreen extends React.PureComponent {
 
   componentDidMount() {
     CameraRoll.getPhotos(
-      {first: 44}
+      {first: 1000}
     )
     .then(data => {
       this.setState({ photos: data.edges })
