@@ -12,8 +12,7 @@ import {
 import {
   Container,
   Content,
-  View,
-  Text
+  View
 } from 'native-base'
 
 const { width } = Dimensions.get('window')

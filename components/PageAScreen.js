@@ -28,6 +28,13 @@ export default class PageAScreen extends React.Component {
           >
             <Text>PageB</Text>
           </Button>
+          <Button
+            primary
+            title="PhotoSelect"
+            onPress={ () => navigate('PhotoSelect') }
+          >
+            <Text>PhotoSelect</Text>
+          </Button>
         </Content>
         <Footer>
           <FooterTab>

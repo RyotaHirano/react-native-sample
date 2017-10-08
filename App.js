@@ -7,6 +7,7 @@ import {
 import PageAScreen from './components/PageAScreen'
 import PageBScreen from './components/PageBScreen'
 import PhotoScreen from './components/PhotoScreen'
+import PhotoSelectScreen from './components/PhotoSelectScreen'
 
 const App = StackNavigator({
   PageA: {
@@ -17,7 +18,10 @@ const App = StackNavigator({
   },
   Photo: {
     screen: PhotoScreen
-  }
+  },
+  PhotoSelect: {
+    screen: PhotoSelectScreen
+  },
 })
 
 export default App
